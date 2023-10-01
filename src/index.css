@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: #11131b;
+}
+
+h1{
+  border-bottom: 10px solid #7c0909;
+  display: inline-block;
+}
+main{
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+nav{
+  grid-column: 1 / -1;
+}
+
+.card__number{
+  height: 35px;
+  width: 35px;
+  display: grid;
+  place-content: center;
+  background: #fff;
+  border-radius: 50%;
+}
+
+form{
+  width: 100%;
+  max-width: 500px;
+}
+
+textarea{
+  max-height: 120px;
+  min-height: 120px;
+}
