@@ -1,17 +1,21 @@
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from "react-redux";
-import { deleteTask } from '../features/tasks/taskSlice';
+import { deleteTask, updateTask } from '../features/tasks/taskSlice';
 
 import TaskItem from './TaskItem';
 
 const Tasks = () => {
 
-  const taskState = useSelector(state => state.tasks)
+  const taskState = useSelector(state => state.tasks);
   const dispatch = useDispatch();
 
   const handleDelete = id => {
     dispatch(deleteTask(id))
   }
+
+const handleUpdateTask = () => {
+  dispatch(updateTask(id))
+};
 
   return (
     <main>
@@ -33,6 +37,9 @@ const Tasks = () => {
             description={description}
             date={date}
             index={index}
+            id={id}
+            handleDelete={handleDelete}
+            handleUpdateTask={handleUpdateTask}
           />
         ))
       }
