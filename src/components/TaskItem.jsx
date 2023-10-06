@@ -1,4 +1,4 @@
-import {dateNow, dateFormat} from "../helpers/date";
+import {dateNow} from "../helpers/date";
 import { Link } from "react-router-dom";
 
 const TaskItem = ({ id, title, description, date, index, handleDelete }) => {
@@ -11,9 +11,9 @@ const TaskItem = ({ id, title, description, date, index, handleDelete }) => {
         <span className='font-bold text-star card__number'>{index + 1}</span>
       </h2>
 
-      <div className='p-4 bg-indigo-800 rounded'>
+      <div className='p-4 bg-indigo-800 rounded grid'>
 
-        <p className='text-white font-semibold text-start'> {description} </p>
+        <p className='text-white font-semibold text-start card__description'> {description} </p>
 
         <p className='text-white font-black flex gap-2 justify-end pt-3'>
           <span>Creada: { dateNow() }</span>

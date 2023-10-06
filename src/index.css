@@ -13,13 +13,22 @@ h1{
 main{
   max-width: 1000px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  align-items: start;
 }
 
 nav{
   grid-column: 1 / -1;
+  gap: 2rem;
+}
+
+.card{
+  max-width: 500px;
+}
+
+.card__description{
+  display: block;
+  max-width: 400px;
+  word-wrap: break-word;
 }
 
 .card__number{
@@ -39,4 +48,13 @@ form{
 textarea{
   max-height: 120px;
   min-height: 120px;
+}
+@media screen and (max-width: 456px) {
+  nav{
+    display: flex;
+    flex-direction: column;
+  }
+  .card__description{
+    max-width: 200px;
+  }
 }

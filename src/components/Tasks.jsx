@@ -18,7 +18,7 @@ const handleUpdateTask = () => {
 };
 
   return (
-    <main>
+    <main className='flex flex-col justify-center gap-6 px-2 pb-12 items-center md:items-start md:grid md:grid-cols-2'>
 
       <nav className='flex justify-between'>
         <h2 className='text-white text-4xl font-semibold'>Lista de Tareas</h2>
