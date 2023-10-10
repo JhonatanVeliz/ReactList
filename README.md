@@ -1,12 +1,8 @@
-# Proyecto de una ap de tareas con REDUX
+# Proyecto de una aPp de tareas con REDUX
 
 Es un proyecto CRUD de una app de tareas diarias con persistencia de datos en localStorage 
 
 ## Tecnologías:
 React,
 Tailwind,
-
-
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Redux Toolkit
